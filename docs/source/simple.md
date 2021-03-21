@@ -111,7 +111,7 @@ ds = hub.Dataset(url, shape=(1000,), schema=my_schema, token="/path/to/credentia
 #### Azure
 ```python
 url = 'https://activeloop.blob.core.windows.net/activeloop-hub/dataset' # Azure link
-ds = hub.Dataset(url, shape=(1000,), schema=my_schema, token="/path/to/credentials")
+ds = hub.Dataset(url, shape=(1000,), schema=my_schema, token={"account_key:": "your_blob_access_key"})
 ```
 
 
